@@ -21,7 +21,7 @@ flatpickr(calendar, {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0].getTime() < Date.now()) {
-      Report.failure('Ooops...', 'Please, choose a date in the future!');
+      Report.failure('Please, choose a date in the future!');
     } else {
       Report.success('Perfectly! Click on start!', '', 'Okay');
       start.disabled = false;
